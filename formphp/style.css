@@ -1,0 +1,126 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password], input[type=email], select, option {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 10px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 20px 20px;
+  margin: 8px 0;
+  border: 2px solid green;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.signupbtn {
+  display: block;
+  place-content: center;
+  place-items: center;
+  width: 200px;
+  font-size: 15px;
+}
+
+.container {
+  padding: 16px;
+  margin: 20px;
+}
+
+
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+.namecol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.namecol1{
+    width: 250px;
+}
+
+[type=radio], [type=checkbox] {
+    width: 2rem;
+    height: 2rem;
+    color: rgb(30, 255, 79);
+    vertical-align: middle;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    outline: 0;
+    flex-grow: 0;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    transition: background 300ms;
+    cursor: pointer;
+  }
+  
+  
+  [type=radio]::before, [type=checkbox]::before {
+    content: "";
+    color: transparent;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    border: 0;
+    background-color: transparent;
+    background-size: contain;
+    box-shadow: inset 0 0 0 1px #CCD3D8;
+  }
+  
+  
+  [type=radio]:checked, [type=checkbox]:checked {
+    background-color: currentcolor;
+  }
+  
+  [type=radio]:checked::before , [type=checkbox]:checked::before {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+  }
+  .cbcolumber{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .cbName{
+      font-size: 20px;
+      padding: 10px;
+  }
+  .cbDiv{  
+    width: 100%;
+    padding: 15px;
+    margin: 5px 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
