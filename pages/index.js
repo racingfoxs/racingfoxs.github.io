@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Navigation from "@/components/navigation";
+import Navigation from "../components/Navigation";
 import { useState } from "react";
 export default function Home() {
   const [nav, setNav] = useState(false);
