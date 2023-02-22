@@ -820,13 +820,14 @@ export default function Home() {
             </div>
           </div>
           <form
-           name="contact"
+            name="contact"
+            netlify
             className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
-            netlify >
+          >
             <label className="block">
               <span className="mb-1">Full name</span>
               <input
-              name="name"
+                name="name"
                 type="text"
                 placeholder="Leroy Jenkins"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-teal-400 dark:bg-gray-800"
@@ -835,7 +836,7 @@ export default function Home() {
             <label className="block">
               <span className="mb-1">Email address</span>
               <input
-              name="email"
+                name="email"
                 type="email"
                 placeholder="leroy@jenkins.com"
                 className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-teal-400 dark:bg-gray-800"
@@ -851,7 +852,7 @@ export default function Home() {
             </label>
             <button
               type="button"
-              className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-gray-400 dark:text-gray-900"
+              className="self-center px-8 py-3 text-lg font-semibold rounded dark:bg-teal-400 dark:text-gray-900 hover:bg-gray-900 hover:text-teal-400"
             >
               Submit
             </button>
